@@ -52,6 +52,7 @@ public:
     void readVideo(const std::string &videoPath);
     void imgProcess();
     void findLightBar();
+    void armorDetect();
     void numClassify(const std::string &model_path);
 
 

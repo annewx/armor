@@ -45,7 +45,7 @@
 //
 //        if(hikCam.StartDevice(0) != 0) return false;
 //        hikCam.SetResolution(1289,1024);
-//        hikCam.SetPixelFormat(173011514);
+//        hikCam.SetPixelFormat(173011512);
 //        hikCam.SetExposureTime(5000);
 //        hikCam.SetGAIN(10.0);
 //        hikCam.SetFrameRate(120);
@@ -83,12 +83,12 @@
             cv::namedWindow("pre", cv::WINDOW_NORMAL);
             cv::resizeWindow("pre", 800, 600);
 
-            cv::namedWindow("img",cv::WINDOW_NORMAL);
-            cv::resizeWindow("img",800,600);
+//            cv::namedWindow("img",cv::WINDOW_NORMAL);
+//            cv::resizeWindow("img",800,600);
 
 
             cv::imshow("pre",detector.pre);
-            cv::imshow("img",detector.img);
+//            cv::imshow("img",detector.img);
             cv::waitKey(10);  // 显示图像并等待按键
 
 
