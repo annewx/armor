@@ -80,10 +80,10 @@ void detect::findLightBar() {
         else{
             light.push_back(bar[i]);
         }
-        line(pre,P[0],P[1],Scalar(0,255,0),2);
-        line(pre,P[1],P[2],Scalar(0,255,0),2);
-        line(pre,P[2],P[3],Scalar(0,255,0),2);
-        line(pre,P[3],P[0],Scalar(0,255,0),2);
+        line(pre,P[0],P[1],Scalar(255,0,0),2);
+        line(pre,P[1],P[2],Scalar(255,0,0),2);
+        line(pre,P[2],P[3],Scalar(255,0,0),2);
+        line(pre,P[3],P[0],Scalar(255,0,0),2);
 
 
     }
@@ -209,7 +209,7 @@ void detect::numClassify(const std::string &model_path) {
            for (int i = 0; i < 256; i++) {
                p[i] = cv::saturate_cast<uchar>(pow(i / 255.0, gama) * 255.0);
            }
-           cv::LUT(num, lookUpTable, num);
+            cv::LUT(num, lookUpTable, num);
             cv::dnn::blobFromImage(num, blob, 1., cv::Size(28,20));
             cv::dnn::Net net_ = cv::dnn::readNetFromONNX(model_path);
             net_.setInput(blob);
@@ -247,8 +247,6 @@ void detect::numClassify(const std::string &model_path) {
                 line(pre, lights_vertices[1], lights_vertices[2], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[2], lights_vertices[3], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[3], lights_vertices[0], Scalar(0,  255,0), 2);
-
-
             }
             else{
                 list = 0;

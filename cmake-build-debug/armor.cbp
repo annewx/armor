@@ -96,6 +96,9 @@
 		<Unit filename="/home/anne/Desktop/RM/armor/Pnp/pnp.hpp">
 			<Option target="armor"/>
 		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/Serial/packet.h">
+			<Option target="armor"/>
+		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/Serial/serial.cpp">
 			<Option target="armor"/>
 		</Unit>

@@ -12,6 +12,7 @@
 #include "Serial/serial.hpp"
 
 
+
     int main() {
         detect detector;
         pnp pnpSolve;
@@ -82,6 +83,7 @@
 
             cv::namedWindow("pre", cv::WINDOW_NORMAL);
             cv::resizeWindow("pre", 800, 600);
+
 
 //            cv::namedWindow("img",cv::WINDOW_NORMAL);
 //            cv::resizeWindow("img",800,600);
