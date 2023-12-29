@@ -335,35 +335,21 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
  /home/anne/Desktop/RM/armor/Detect/detect.hpp \
  /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
  /home/anne/Desktop/RM/armor/Pnp/../Detect/detect.hpp \
- /home/anne/Desktop/RM/armor/hik_camera/include/HikCam.hpp \
- /home/anne/Desktop/RM/armor/hik_camera/include/MvCameraControl.h \
- /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
- /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
- /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
- /home/anne/Desktop/RM/armor/Serial/serial.hpp \
- /usr/include/libserialport.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /home/anne/Desktop/RM/armor/Pnp/../vSerial/serial.hpp \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/termios.h \
- /usr/include/x86_64-linux-gnu/bits/termios.h \
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/anne/Desktop/RM/armor/Serial/../Detect/detect.hpp \
- /home/anne/Desktop/RM/armor/Serial/../Pnp/pnp.hpp
+ /usr/include/linux/close_range.h \
+ /usr/local/include/CSerialPort/SerialPort.h \
+ /usr/local/include/CSerialPort/SerialPort_global.h \
+ /usr/local/include/CSerialPort/SerialPortListener.h \
+ /home/anne/Desktop/RM/armor/Pnp/../vSerial/../vSerial/packet.h \
+ /home/anne/Desktop/RM/armor/hik_camera/include/HikCam.hpp \
+ /home/anne/Desktop/RM/armor/hik_camera/include/MvCameraControl.h \
+ /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
+ /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
+ /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
+ /home/anne/Desktop/RM/armor/vSerial/serial.hpp

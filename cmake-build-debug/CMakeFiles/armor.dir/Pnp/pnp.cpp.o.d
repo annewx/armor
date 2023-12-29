@@ -333,4 +333,16 @@ CMakeFiles/armor.dir/Pnp/pnp.cpp.o: \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
  /home/anne/Desktop/RM/armor/Pnp/../Detect/detect.hpp \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /home/anne/Desktop/RM/armor/Pnp/../vSerial/serial.hpp \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /usr/local/include/CSerialPort/SerialPort.h \
+ /usr/local/include/CSerialPort/SerialPort_global.h \
+ /usr/local/include/CSerialPort/SerialPortListener.h \
+ /home/anne/Desktop/RM/armor/Pnp/../vSerial/../vSerial/packet.h

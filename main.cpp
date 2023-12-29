@@ -39,29 +39,29 @@ int main()
 
     detector.readVideo(videoPath);  // 读取视频
 
-    while (true) {
-        cv::Mat frame;
-        detector.video >> frame;  // 从视频中读取一帧图像
+//    while (true) {
+//        cv::Mat frame;
+//        detector.video >> frame;  // 从视频中读取一帧图像
 
-        if (frame.empty()) {
-            // 视频结束或读取失败，退出循环
-            break;
-        }
+//        if (frame.empty()) {
+//            // 视频结束或读取失败，退出循环
+//            break;
+//        }
 
-//      Mat video;
-//
-//      if(hikCam.StartDevice(0) != 0) return false;
-//      hikCam.SetResolution(1289,1024);
-//      hikCam.SetPixelFormat(173011512);
-//      hikCam.SetExposureTime(5000);
-//      hikCam.SetGAIN(10.0);
-//      hikCam.SetFrameRate(120);
-//      hikCam.SetStreamOn();
-//      string  CamFPS = to_string(hikCam.GetFrameRate());
-//      cout<<"CamFPS"+ CamFPS<<endl;
-//      while(true)
-//      {
-//          hikCam.GetMat(video);
+      Mat video;
+
+      if(hikCam.StartDevice(0) != 0) return false;
+      hikCam.SetResolution(1289,1024);
+      hikCam.SetPixelFormat(173011512);
+      hikCam.SetExposureTime(5000);
+      hikCam.SetGAIN(10.0);
+      hikCam.SetFrameRate(120);
+      hikCam.SetStreamOn();
+      string  CamFPS = to_string(hikCam.GetFrameRate());
+      cout<<"CamFPS"+ CamFPS<<endl;
+      while(true)
+      {
+          hikCam.GetMat(video);
 
 
 
@@ -72,9 +72,9 @@ int main()
         pnpSolve.v = RobotData.muzzleSpeed;
 
 
-        detector.img = frame.clone();
+        detector.img = video.clone();
         detector.imgProcess();
-        detector.pre = frame.clone();
+        detector.pre = video.clone();
         detector.findLightBar();
         detector.numClassify(modelPath);
         for (auto &armor : detector.armorPoint) {pnpSolve.pnpSolve(armor);

@@ -1229,7 +1229,12 @@ CMakeFiles/armor.dir/Serial/serial.cpp.o: /home/anne/Desktop/RM/armor/Serial/ser
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
-  /home/anne/Desktop/RM/armor/Detect/detect.hpp
+  /home/anne/Desktop/RM/armor/Detect/detect.hpp \
+  /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
+  /usr/local/include/CSerialPort/SerialPort.h \
+  /usr/local/include/CSerialPort/SerialPort_global.h \
+  /usr/local/include/CSerialPort/SerialPortListener.h \
+  /home/anne/Desktop/RM/armor/vSerial/packet.h
 
 CMakeFiles/armor.dir/hik_camera/HikCam.cpp.o: /home/anne/Desktop/RM/armor/hik_camera/HikCam.cpp \
   /usr/include/stdc-predef.h \
@@ -2024,11 +2029,6 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
   /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
-  /home/anne/Desktop/RM/armor/hik_camera/include/HikCam.hpp \
-  /home/anne/Desktop/RM/armor/hik_camera/include/MvCameraControl.h \
-  /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
-  /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
-  /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
   /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -2041,7 +2041,13 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
   /usr/local/include/CSerialPort/SerialPort.h \
   /usr/local/include/CSerialPort/SerialPort_global.h \
   /usr/local/include/CSerialPort/SerialPortListener.h \
-  /home/anne/Desktop/RM/armor/vSerial/packet.h
+  /home/anne/Desktop/RM/armor/vSerial/packet.h \
+  /home/anne/Desktop/RM/armor/hik_camera/include/HikCam.hpp \
+  /home/anne/Desktop/RM/armor/hik_camera/include/MvCameraControl.h \
+  /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
+  /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
+  /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
+  /home/anne/Desktop/RM/armor/vSerial/serial.hpp
 
 
 /home/anne/Desktop/RM/armor/main.hpp:
