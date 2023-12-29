@@ -7,6 +7,7 @@
 #include <opencv2/opencv.hpp>
 #include "vector"
 #include "../Detect/detect.hpp"
+#include "../vSerial/serial.hpp"
 
 
 

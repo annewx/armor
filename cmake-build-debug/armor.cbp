@@ -5,7 +5,7 @@
 		<Option title="armor"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\CSerialPort\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/anne/Desktop/RM/armor/cmake-build-debug"/>
@@ -96,9 +96,6 @@
 		<Unit filename="/home/anne/Desktop/RM/armor/Pnp/pnp.hpp">
 			<Option target="armor"/>
 		</Unit>
-		<Unit filename="/home/anne/Desktop/RM/armor/Serial/packet.h">
-			<Option target="armor"/>
-		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/Serial/serial.cpp">
 			<Option target="armor"/>
 		</Unit>
@@ -112,6 +109,12 @@
 			<Option target="armor"/>
 		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/main.hpp">
+			<Option target="armor"/>
+		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/vSerial/packet.h">
+			<Option target="armor"/>
+		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/vSerial/serial.hpp">
 			<Option target="armor"/>
 		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/CMakeLists.txt">
@@ -128,6 +131,9 @@
 		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/../../../../../usr/local/lib/cmake/CSerialPort/cserialport-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\CSerialPort\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

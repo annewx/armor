@@ -790,7 +790,20 @@ CMakeFiles/armor.dir/Pnp/pnp.cpp.o: /home/anne/Desktop/RM/armor/Pnp/pnp.cpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/local/include/CSerialPort/SerialPort.h \
+  /usr/local/include/CSerialPort/SerialPort_global.h \
+  /usr/local/include/CSerialPort/SerialPortListener.h \
+  /home/anne/Desktop/RM/armor/vSerial/packet.h
 
 CMakeFiles/armor.dir/Serial/serial.cpp.o: /home/anne/Desktop/RM/armor/Serial/serial.cpp \
   /usr/include/stdc-predef.h \
@@ -2016,15 +2029,7 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
   /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
   /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
   /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
-  /home/anne/Desktop/RM/armor/Serial/serial.hpp \
-  /usr/include/libserialport.h \
-  /usr/include/fcntl.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
-  /usr/include/linux/falloc.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -2033,20 +2038,10 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  /usr/include/termios.h \
-  /usr/include/x86_64-linux-gnu/bits/termios.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
-  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
-  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
-  /home/anne/Desktop/RM/armor/Detect/detect.hpp \
-  /home/anne/Desktop/RM/armor/Pnp/pnp.hpp
+  /usr/local/include/CSerialPort/SerialPort.h \
+  /usr/local/include/CSerialPort/SerialPort_global.h \
+  /usr/local/include/CSerialPort/SerialPortListener.h \
+  /home/anne/Desktop/RM/armor/vSerial/packet.h
 
 
 /home/anne/Desktop/RM/armor/main.hpp:
@@ -2079,10 +2074,6 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/termios-struct.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/unistd.h:
-
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/linux/falloc.h:
@@ -2092,6 +2083,18 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /home/anne/Desktop/RM/armor/Serial/serial.cpp:
+
+/usr/local/include/CSerialPort/SerialPortListener.h:
+
+/usr/local/include/CSerialPort/SerialPort_global.h:
+
+/usr/local/include/CSerialPort/SerialPort.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/unistd.h:
+
+/home/anne/Desktop/RM/armor/vSerial/serial.hpp:
 
 /usr/local/include/opencv4/opencv2/video/background_segm.hpp:
 
@@ -2244,6 +2247,8 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/home/anne/Desktop/RM/armor/vSerial/packet.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 

@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/anne/Downloads/CLion-2023.1.5/clion-2023.1.5/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake"
   "/home/anne/Downloads/CLion-2023.1.5/clion-2023.1.5/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake"
   "/home/anne/Downloads/CLion-2023.1.5/clion-2023.1.5/bin/cmake/linux/x64/share/cmake-3.25/Modules/ProcessorCount.cmake"
+  "/usr/local/lib/cmake/CSerialPort/cserialport-config.cmake"
   "/usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake"
   "/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake"
   "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"

@@ -11,6 +11,7 @@
 
 
 
+
 serial::serial(detect &detect,pnp &pnp){
     serial_detect = &detect;
     serial_pnp =&pnp;
@@ -38,7 +39,6 @@ bool serial::open(){
             serial_detect->serData = data;
             sp_ret = open();
         } else {
-            
             if(serial_detect->list != 0){
                 data = "A";
                 data += "Y";

@@ -233,7 +233,7 @@ void detect::numClassify(const std::string &model_path) {
             else{
                 armorClass.armor_type = "SMALL";
             }
-            if(confidence > 0 and numClasses[label_id] =="1" ){
+            if(confidence > 0){
                 armorClass.left_top = left_top;
                 armorClass.left_bottom = left_bottom;
                 armorClass.right_top = right_top;
@@ -243,6 +243,8 @@ void detect::numClassify(const std::string &model_path) {
                 string num = armorClass.label_id+":"+to_string(armorClass.confidence);
                 cv::putText(pre, num, Point(50,50),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255), 2);
                 list ++;
+//                cv::putText(pre, serData, Point(50,100),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255),2);
+//                cv::putText(pre, readData, Point(50,150),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255),2);
                 line(pre, lights_vertices[0], lights_vertices[1], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[1], lights_vertices[2], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[2], lights_vertices[3], Scalar(0,  255,0), 2);

@@ -165,6 +165,7 @@ armor: /usr/local/lib/libopencv_stitching.so.4.5.0
 armor: /usr/local/lib/libopencv_video.so.4.5.0
 armor: /usr/local/lib/libopencv_videoio.so.4.5.0
 armor: /opt/MVS/lib/64/libMvCameraControl.so
+armor: /usr/local/lib/libcserialport.so
 armor: /usr/local/lib/libopencv_imgcodecs.so.4.5.0
 armor: /usr/local/lib/libopencv_calib3d.so.4.5.0
 armor: /usr/local/lib/libopencv_features2d.so.4.5.0
