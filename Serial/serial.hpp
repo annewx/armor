@@ -1,6 +1,10 @@
 //
-// Created by anne on 10/28/23.
+// Created by anne on 12/30/23.
 //
+
+#ifndef ARMOR_SERIAL_HPP
+#define ARMOR_SERIAL_HPP
+
 #include <iostream>
 #include <libserialport.h>
 #include <iostream>
@@ -10,10 +14,6 @@
 #include <string>
 #include "../Detect/detect.hpp"
 #include "../Pnp/pnp.hpp"
-
-
-#ifndef ARMOR_SERIAL_HPP
-#define ARMOR_SERIAL_HPP
 
 
 class serial {
@@ -36,9 +36,5 @@ public:
 
 
 };
-
-
-
-
 
 #endif //ARMOR_SERIAL_HPP

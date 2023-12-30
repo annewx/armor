@@ -1230,11 +1230,7 @@ CMakeFiles/armor.dir/Serial/serial.cpp.o: /home/anne/Desktop/RM/armor/Serial/ser
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
-  /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
-  /usr/local/include/CSerialPort/SerialPort.h \
-  /usr/local/include/CSerialPort/SerialPort_global.h \
-  /usr/local/include/CSerialPort/SerialPortListener.h \
-  /home/anne/Desktop/RM/armor/vSerial/packet.h
+  /home/anne/Desktop/RM/armor/vSerial/serial.hpp
 
 CMakeFiles/armor.dir/hik_camera/HikCam.cpp.o: /home/anne/Desktop/RM/armor/hik_camera/HikCam.cpp \
   /usr/include/stdc-predef.h \

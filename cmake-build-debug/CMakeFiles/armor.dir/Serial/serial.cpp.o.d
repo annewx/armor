@@ -360,8 +360,4 @@ CMakeFiles/armor.dir/Serial/serial.cpp.o: \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/anne/Desktop/RM/armor/Serial/../Pnp/pnp.hpp \
  /home/anne/Desktop/RM/armor/Serial/../Pnp/../Detect/detect.hpp \
- /home/anne/Desktop/RM/armor/Serial/../Pnp/../vSerial/serial.hpp \
- /usr/local/include/CSerialPort/SerialPort.h \
- /usr/local/include/CSerialPort/SerialPort_global.h \
- /usr/local/include/CSerialPort/SerialPortListener.h \
- /home/anne/Desktop/RM/armor/Serial/../Pnp/../vSerial/../vSerial/packet.h
+ /home/anne/Desktop/RM/armor/Serial/../Pnp/../vSerial/serial.hpp

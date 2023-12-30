@@ -11,6 +11,10 @@
 using namespace std;
 using namespace cv;
 
+void pnp::Pnp(detect &detect){
+    pnp_detect = &detect;
+};
+
 void pnp::pnpSolve(armor &armorPoint) {
     vector<Point2d> imagePoints;
     imagePoints.push_back(Point2d(armorPoint.left_top.x, armorPoint.left_top.y));
@@ -51,6 +55,8 @@ void pnp::pnpSolve(armor &armorPoint) {
     cout<<"distance:"<<armorPoint.realDistance<<endl;
 
 
+
+
 }
 void pnp::offSet(armor &armorPoint){
     x = sqrt(pow(armorPoint.translation_vector.at<double>(0,0),2)+pow(armorPoint.translation_vector.at<double>(0,2),2))/100;
@@ -68,5 +74,6 @@ void pnp::offSet(armor &armorPoint){
     pitch_off = atan2(ay,x)*180/PI;
     armorPoint.pitch = pitch_off;
     cout<<"pitch_off"<<armorPoint.pitch;
+
 
 }
