@@ -71,6 +71,9 @@ void detect::findLightBar() {
         if(bar[i].angle > 45){
             continue;
         }
+//        if(bar[i].size.height/bar[i].size.width<1.5 || bar[i].size.height/bar[i].size.width>8){
+//            continue;
+//        }
         if(bar[i].size.width/bar[i].size.height > 8|| bar[i].size.width/bar[i].size.height <0.8){
             continue;
         }
@@ -254,7 +257,6 @@ void detect::numClassify(const std::string &model_path) {
             else{
                 list = 0;
             }
-
         }
     }
 
