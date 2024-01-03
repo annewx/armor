@@ -87,8 +87,6 @@ void detect::findLightBar() {
         line(pre,P[1],P[2],Scalar(255,0,0),2);
         line(pre,P[2],P[3],Scalar(255,0,0),2);
         line(pre,P[3],P[0],Scalar(255,0,0),2);
-
-
     }
 }
 
@@ -204,7 +202,6 @@ void detect::numClassify(const std::string &model_path) {
             Scalar tempVal = cv::mean( number_image );
             cv::threshold(number_image, number_image, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
             num = number_image /255.0;
-
 
            double gama = 0.1;
            cv::Mat lookUpTable(1, 256, CV_8U);

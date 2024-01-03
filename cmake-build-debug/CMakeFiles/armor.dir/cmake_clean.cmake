@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/armor.dir/hik_camera/HikCam.cpp.o.d"
   "CMakeFiles/armor.dir/main.cpp.o"
   "CMakeFiles/armor.dir/main.cpp.o.d"
+  "CMakeFiles/armor.dir/offset/offset.cpp.o"
+  "CMakeFiles/armor.dir/offset/offset.cpp.o.d"
   "armor"
   "armor.pdb"
 )

@@ -249,6 +249,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+offset/offset.o: offset/offset.cpp.o
+.PHONY : offset/offset.o
+
+# target to build an object file
+offset/offset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/offset/offset.cpp.o
+.PHONY : offset/offset.cpp.o
+
+offset/offset.i: offset/offset.cpp.i
+.PHONY : offset/offset.i
+
+# target to preprocess a source file
+offset/offset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/offset/offset.cpp.i
+.PHONY : offset/offset.cpp.i
+
+offset/offset.s: offset/offset.cpp.s
+.PHONY : offset/offset.s
+
+# target to generate assembly for a file
+offset/offset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/offset/offset.cpp.s
+.PHONY : offset/offset.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,6 +297,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... offset/offset.o"
+	@echo "... offset/offset.i"
+	@echo "... offset/offset.s"
 .PHONY : help
 
 

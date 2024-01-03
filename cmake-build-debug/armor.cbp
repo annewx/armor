@@ -111,6 +111,12 @@
 		<Unit filename="/home/anne/Desktop/RM/armor/main.hpp">
 			<Option target="armor"/>
 		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/offset/offset.cpp">
+			<Option target="armor"/>
+		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/offset/offset.hpp">
+			<Option target="armor"/>
+		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/vSerial/packet.h">
 			<Option target="armor"/>
 		</Unit>

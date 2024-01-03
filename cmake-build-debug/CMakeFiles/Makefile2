@@ -81,12 +81,12 @@ clean: CMakeFiles/armor.dir/clean
 CMakeFiles/armor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/armor.dir/build.make CMakeFiles/armor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anne/Desktop/RM/armor/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target armor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anne/Desktop/RM/armor/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target armor"
 .PHONY : CMakeFiles/armor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/armor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anne/Desktop/RM/armor/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anne/Desktop/RM/armor/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/armor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/anne/Desktop/RM/armor/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/armor.dir/rule

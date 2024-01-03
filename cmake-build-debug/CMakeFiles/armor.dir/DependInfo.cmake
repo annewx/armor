@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anne/Desktop/RM/armor/Serial/serial.cpp" "CMakeFiles/armor.dir/Serial/serial.cpp.o" "gcc" "CMakeFiles/armor.dir/Serial/serial.cpp.o.d"
   "/home/anne/Desktop/RM/armor/hik_camera/HikCam.cpp" "CMakeFiles/armor.dir/hik_camera/HikCam.cpp.o" "gcc" "CMakeFiles/armor.dir/hik_camera/HikCam.cpp.o.d"
   "/home/anne/Desktop/RM/armor/main.cpp" "CMakeFiles/armor.dir/main.cpp.o" "gcc" "CMakeFiles/armor.dir/main.cpp.o.d"
+  "/home/anne/Desktop/RM/armor/offset/offset.cpp" "CMakeFiles/armor.dir/offset/offset.cpp.o" "gcc" "CMakeFiles/armor.dir/offset/offset.cpp.o.d"
   )
 
 # Targets to which this target links.

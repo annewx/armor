@@ -31,6 +31,7 @@ struct armor{
     float confidence;
     Mat translation_vector;
     Mat rotation_vector;
+    float v;
 };
 class detect {
 public:

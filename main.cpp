@@ -67,11 +67,10 @@ int main()
 
 
         visionPort.robotUpdate(RobotData);
-//        detector.enemyColor=RobotData.foeColor?"blue":"red";
+        detector.enemyColor=RobotData.foeColor?"red":"blue";
         RobotData.mode=1;
-        RobotData.muzzleSpeed=RobotData.muzzleSpeed>5?RobotData.muzzleSpeed:0;
+        RobotData.muzzleSpeed=RobotData.muzzleSpeed>5?RobotData.muzzleSpeed:30;
         pnpSolve.v = RobotData.muzzleSpeed;
-
 
         detector.img = frame.clone();
         detector.imgProcess();

@@ -11,6 +11,8 @@
 using namespace std;
 using namespace cv;
 
+
+
 void pnp::Pnp(detect &detect){
     pnp_detect = &detect;
 };
@@ -37,6 +39,7 @@ void pnp::pnpSolve(armor &armorPoint) {
         model_points.push_back(Point3d(+67.5f, +27.5f, 0));
         model_points.push_back(Point3d(-67.5f, +27.5f, 0));
     }
+
     Mat translation_vector;
     Mat rotation_vector;
     solvePnP(model_points, imagePoints, cameraMatrix, distCoeffs,
@@ -53,27 +56,27 @@ void pnp::pnpSolve(armor &armorPoint) {
     armorPoint.yaw = yaw;
     cout<<"yaw"<<armorPoint.yaw;
     cout<<"distance:"<<armorPoint.realDistance<<endl;
-
-
-
-
 }
 void pnp::offSet(armor &armorPoint){
+    armorPoint.v= v;
+    cout<<"v:"<<v;
     x = sqrt(pow(armorPoint.translation_vector.at<double>(0,0),2)+pow(armorPoint.translation_vector.at<double>(0,2),2))/100;
     y = armorPoint.translation_vector.at<double>(0,1)/100;
-    ay = y;
-    for(int i = 0;i<iter;i++){
-        thera = atan2(ay,x);
+    aim_y = y;
+    for(int i = 0;i<1;i++){
+        thera = atan(aim_y/x);
         t = (exp(k*x)-1)/(k*v*cos(thera));
-        ry = v*sin(thera)*t - g * pow(t, 2) / 2;
-        ay = ay+(y-ry);
-        if (abs(ay) < 0.001) {
+        ry = v*sin(thera)*t - g * t*t/2;
+        aim_y = aim_y+(y-ry);
+        if (abs(aim_y-y) < 0.001) {
+            offset_t = t;
             break;
         }
     }
-    pitch_off = atan2(ay,x)*180/PI;
+    pitch_off = atan2(aim_y,x)*180/PI;
     armorPoint.pitch = pitch_off;
     cout<<"pitch_off"<<armorPoint.pitch;
 
 
 }
+
