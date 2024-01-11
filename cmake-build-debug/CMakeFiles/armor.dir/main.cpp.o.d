@@ -335,7 +335,7 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
  /home/anne/Desktop/RM/armor/Detect/detect.hpp \
  /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
  /home/anne/Desktop/RM/armor/Pnp/../Detect/detect.hpp \
- /home/anne/Desktop/RM/armor/Pnp/../vSerial/serial.hpp \
+ /home/anne/Desktop/RM/armor/Pnp/../vSerial/vserial.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -352,4 +352,4 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
  /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
  /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
  /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
- /home/anne/Desktop/RM/armor/vSerial/serial.hpp
+ /home/anne/Desktop/RM/armor/vSerial/vserial.hpp

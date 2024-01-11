@@ -155,21 +155,21 @@ void detect::numClassify(const std::string &model_path) {
 
             if (Bar.center.x<light[i].center.x) {
                 left_bottom.x = (rect1[0].x + rect1[1].x)/2;
-                left_bottom.y = rect1[0].y + abs(rect1[2].y - rect1[0].y)/2 ;
+                left_bottom.y = rect1[0].y + abs(rect1[2].y - rect1[0].y)/3 ;
                 left_top.x = (rect1[2].x + rect1[3].x)/2;
                 left_top.y = rect1[2].y - abs(rect1[2].y - rect1[0].y)/2;
                 right_bottom.x = (rect2[0].x +rect2[1].x)/2;
-                right_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/2;
+                right_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/3;
                 right_top.x = (rect2[2].x +rect2[3].x)/2;
                 right_top.y = rect2[2].y - abs(rect2[2].y - rect2[0].y)/2;
             }
             else{
                 left_bottom.x = (rect2[0].x + rect2[1].x)/2;
-                left_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/2;
+                left_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/3;
                 left_top.x = (rect2[2].x + rect2[3].x)/2;
                 left_top.y = rect2[2].y - abs(rect2[2].y - rect2[0].y)/2;
                 right_bottom.x = (rect1[0].x +rect1[1].x)/2;
-                right_bottom.y = rect1[0].y + abs(rect2[2].y - rect1[0].y)/2;
+                right_bottom.y = rect1[0].y + abs(rect2[2].y - rect1[0].y)/3;
                 right_top.x = (rect1[2].x +rect1[3].x)/2;
                 right_top.y = rect1[2].y - abs(rect1[2].y - rect1[0].y)/2;
             }
@@ -196,13 +196,14 @@ void detect::numClassify(const std::string &model_path) {
             };
             auto rotation_matrix = cv::getPerspectiveTransform(lights_vertices, target_vertices);
             cv::warpPerspective(pre, number_image, rotation_matrix, cv::Size(warp_width,warp_height));
-            imshow("number_",number_image);
+//            imshow("number_",number_image);
             number_image = number_image(cv::Rect(cv::Point((warp_width - roi_size.width) / 2, 0), roi_size));
             cv::cvtColor(number_image, number_image, cv::COLOR_RGB2GRAY);
             Scalar tempVal = cv::mean( number_image );
             cv::threshold(number_image, number_image, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
             num = number_image /255.0;
 
+    //-------------------------------------
            double gama = 0.1;
            cv::Mat lookUpTable(1, 256, CV_8U);
            uchar* p = lookUpTable.ptr();
@@ -210,7 +211,9 @@ void detect::numClassify(const std::string &model_path) {
                p[i] = cv::saturate_cast<uchar>(pow(i / 255.0, gama) * 255.0);
            }
             cv::LUT(num, lookUpTable, num);
-            cv::dnn::blobFromImage(num, blob, 1., cv::Size(28,20));
+   //--------------------------------------
+            imshow("num",num);
+            cv::dnn::blobFromImage(num, blob, 1., cv::Size(20,28));
             cv::dnn::Net net_ = cv::dnn::readNetFromONNX(model_path);
             net_.setInput(blob);
             cv::Mat outputs = net_.forward();
@@ -233,7 +236,7 @@ void detect::numClassify(const std::string &model_path) {
             else{
                 armorClass.armor_type = "SMALL";
             }
-            if(confidence > 0 ){
+            if(armorClass.label_id !="Negative"&& armorClass.confidence > 0.5 ){
                 armorClass.left_top = left_top;
                 armorClass.left_bottom = left_bottom;
                 armorClass.right_top = right_top;
@@ -241,13 +244,12 @@ void detect::numClassify(const std::string &model_path) {
                 armorClass.rect_center = (left_bottom+left_top+right_bottom+right_top)/4;
                 armorPoint.push_back(armorClass);
                 string num = armorClass.label_id+":"+to_string(armorClass.confidence);
-//                cv::putText(pre, num, Point(50,50),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255), 2);
-                cout<<num<<endl;
+                cv::putText(pre, num, Point(50,50),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255), 2);
                 list ++;
                 cv::putText(pre, serData, Point(50,100),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255),2);
                 cv::putText(pre, readData, Point(50,150),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255),2);
-                cout<<serData<<endl;
-                cout<<readData<<endl;
+//                cout<<serData<<endl;
+//                cout<<readData<<endl;
                 line(pre, lights_vertices[0], lights_vertices[1], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[1], lights_vertices[2], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[2], lights_vertices[3], Scalar(0,  255,0), 2);

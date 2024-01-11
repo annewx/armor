@@ -38,7 +38,7 @@ public:
     cv::VideoCapture video;
     cv::Mat img,pre;
     std::string enemyColor = "blue";
-    cv::dnn::Net net = cv::dnn::readNetFromONNX("../model/fc.onnx");
+    cv::dnn::Net net = cv::dnn::readNetFromONNX("../model/mlp.onnx");
     cv::Mat softmax_prob;
     cv::Mat blob;
     cv::Mat number_image;
@@ -46,7 +46,7 @@ public:
     std::vector<cv::RotatedRect> lightPoint;
     std::vector<cv::RotatedRect> light;
     std::vector<armor> armorPoint;
-    std::vector<std::string> numClasses={"Base","1","2","3","4","5","Guard","Outpost","Negative"};
+    std::vector<std::string> numClasses={"1","2","3","4","5","Outpost","Guard","Base","Negative"};
     std::string serData,readData;
     int list = 0;
 

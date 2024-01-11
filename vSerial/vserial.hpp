@@ -49,7 +49,7 @@ public:
     };
 
     bool isOk;
-private:
+//private:
 
     void sendThreadFun(){
         while(true){

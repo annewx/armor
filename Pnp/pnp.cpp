@@ -54,7 +54,6 @@ void pnp::pnpSolve(armor &armorPoint) {
     yaw = atan2(translation_vector.at<double>(0,0), translation_vector.at<double>(0,2))*180/PI;
     pitch = atan2(translation_vector.at<double>(0,1),sqrt(pow(translation_vector.at<double>(0,0),2)+pow(translation_vector.at<double>(0,2),2)))*180/PI;
     armorPoint.yaw = yaw;
-    VisionData.yaw = yaw;
     cout<<"yaw"<<armorPoint.yaw;
     cout<<"distance:"<<armorPoint.realDistance<<endl;
 }
@@ -77,7 +76,5 @@ void pnp::offSet(armor &armorPoint){
     pitch_off = atan2(aim_y,x)*180/PI;
     armorPoint.pitch = pitch_off;
     cout<<"pitch_off"<<armorPoint.pitch;
-
-
 }
 
