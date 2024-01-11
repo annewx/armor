@@ -334,7 +334,7 @@ CMakeFiles/armor.dir/Pnp/pnp.cpp.o: \
  /home/anne/Desktop/RM/armor/Pnp/../Detect/detect.hpp \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/anne/Desktop/RM/armor/Pnp/../vSerial/serial.hpp \
+ /home/anne/Desktop/RM/armor/Pnp/../vSerial/vserial.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \

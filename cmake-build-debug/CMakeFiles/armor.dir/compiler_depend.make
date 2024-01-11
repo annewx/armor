@@ -791,7 +791,7 @@ CMakeFiles/armor.dir/Pnp/pnp.cpp.o: /home/anne/Desktop/RM/armor/Pnp/pnp.cpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
+  /home/anne/Desktop/RM/armor/vSerial/vserial.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -1230,7 +1230,7 @@ CMakeFiles/armor.dir/Serial/serial.cpp.o: /home/anne/Desktop/RM/armor/Serial/ser
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
-  /home/anne/Desktop/RM/armor/vSerial/serial.hpp
+  /home/anne/Desktop/RM/armor/vSerial/vserial.hpp
 
 CMakeFiles/armor.dir/hik_camera/HikCam.cpp.o: /home/anne/Desktop/RM/armor/hik_camera/HikCam.cpp \
   /usr/include/stdc-predef.h \
@@ -2025,7 +2025,7 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
   /home/anne/Desktop/RM/armor/Pnp/pnp.hpp \
   /home/anne/Desktop/RM/armor/Detect/detect.hpp \
-  /home/anne/Desktop/RM/armor/vSerial/serial.hpp \
+  /home/anne/Desktop/RM/armor/vSerial/vserial.hpp \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -2043,7 +2043,7 @@ CMakeFiles/armor.dir/main.cpp.o: /home/anne/Desktop/RM/armor/main.cpp \
   /home/anne/Desktop/RM/armor/hik_camera/include/MvErrorDefine.h \
   /home/anne/Desktop/RM/armor/hik_camera/include/CameraParams.h \
   /home/anne/Desktop/RM/armor/hik_camera/include/PixelType.h \
-  /home/anne/Desktop/RM/armor/vSerial/serial.hpp
+  /home/anne/Desktop/RM/armor/vSerial/vserial.hpp
 
 CMakeFiles/armor.dir/offset/offset.cpp.o: /home/anne/Desktop/RM/armor/offset/offset.cpp \
   /usr/include/stdc-predef.h \
@@ -2312,7 +2312,7 @@ CMakeFiles/armor.dir/offset/offset.cpp.o: /home/anne/Desktop/RM/armor/offset/off
 
 /usr/include/unistd.h:
 
-/home/anne/Desktop/RM/armor/vSerial/serial.hpp:
+/home/anne/Desktop/RM/armor/vSerial/vserial.hpp:
 
 /usr/local/include/opencv4/opencv2/video/background_segm.hpp:
 
