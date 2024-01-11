@@ -1,7 +1,9 @@
 //
-// Created by anne on 12/29/23.
+// Created by anne on 1/11/24.
 //
 
+#ifndef ARMOR_VSERIAL_HPP
+#define ARMOR_VSERIAL_HPP
 #ifndef ARMOR_SERIAL_HPP
 #define ARMOR_SERIAL_HPP
 
@@ -81,16 +83,18 @@ private:
             }
         }
     };
-        const char* devName;
-        const int baudRate;
-        std::unique_ptr<CSerialPort> ser;
-        std::thread sendThread;
-        std::thread reciveThread;
-        std::thread watchDogThread;
-        visionArray visionArray_;
-        robotArray robotArray_;
-    };
+    const char* devName;
+    const int baudRate;
+    std::unique_ptr<CSerialPort> ser;
+    std::thread sendThread;
+    std::thread reciveThread;
+    std::thread watchDogThread;
+    visionArray visionArray_;
+    robotArray robotArray_;
+};
 
 
 
 #endif //ARMOR_SERIAL_HPP
+
+#endif //ARMOR_VSERIAL_HPP

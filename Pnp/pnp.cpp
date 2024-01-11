@@ -6,7 +6,7 @@
 #include <opencv2/opencv.hpp>
 #include "vector"
 #include "../Detect/detect.hpp"
-#include "../vSerial/serial.hpp"
+#include "../vSerial/vserial.hpp"
 #define PI float(acos(-1))
 using namespace std;
 using namespace cv;
@@ -54,6 +54,7 @@ void pnp::pnpSolve(armor &armorPoint) {
     yaw = atan2(translation_vector.at<double>(0,0), translation_vector.at<double>(0,2))*180/PI;
     pitch = atan2(translation_vector.at<double>(0,1),sqrt(pow(translation_vector.at<double>(0,0),2)+pow(translation_vector.at<double>(0,2),2)))*180/PI;
     armorPoint.yaw = yaw;
+    VisionData.yaw = yaw;
     cout<<"yaw"<<armorPoint.yaw;
     cout<<"distance:"<<armorPoint.realDistance<<endl;
 }

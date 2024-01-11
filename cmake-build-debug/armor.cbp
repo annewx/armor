@@ -123,6 +123,9 @@
 		<Unit filename="/home/anne/Desktop/RM/armor/vSerial/serial.hpp">
 			<Option target="armor"/>
 		</Unit>
+		<Unit filename="/home/anne/Desktop/RM/armor/vSerial/vserial.hpp">
+			<Option target="armor"/>
+		</Unit>
 		<Unit filename="/home/anne/Desktop/RM/armor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

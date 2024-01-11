@@ -246,6 +246,8 @@ void detect::numClassify(const std::string &model_path) {
                 list ++;
                 cv::putText(pre, serData, Point(50,100),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255),2);
                 cv::putText(pre, readData, Point(50,150),cv::FONT_HERSHEY_SIMPLEX, 1,cv::Scalar(0,0,255),2);
+                cout<<serData<<endl;
+                cout<<readData<<endl;
                 line(pre, lights_vertices[0], lights_vertices[1], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[1], lights_vertices[2], Scalar(0,  255,0), 2);
                 line(pre, lights_vertices[2], lights_vertices[3], Scalar(0,  255,0), 2);

@@ -10,7 +10,7 @@
 #include "Pnp/pnp.hpp"
 #include "hik_camera/include/HikCam.hpp"
 //#include "Serial/serial.hpp"
-#include "vSerial/serial.hpp"
+#include "vSerial/vserial.hpp"
 
 
 int main()
@@ -81,7 +81,7 @@ int main()
             pnpSolve.offSet(armor);
         }
         visionPort.visionUpdate(VisionData);
-        if(detector.list == 0){VisionData.aimPitch=0;VisionData.aimYaw=0;}
+//        if(detector.list == 0){VisionData.aimPitch=0;VisionData.aimYaw=0;}
         if(visionPort.isOk){
             detector.serData=cv::format("Y:%05.2f/P:%05.2f",VisionData.aimYaw,VisionData.aimPitch);
             detector.readData=cv::format("SelfY:%05.2f/SelfP:%05.2f",RobotData.robotYaw,RobotData.robotPitch);
