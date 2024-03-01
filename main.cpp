@@ -35,7 +35,7 @@ int main()
 
 
     std::string videoPath = "../38324.avi";  // 视频文件路径
-    std::string modelPath = "../model/mlp.onnx";  // 模型文件路径
+    std::string modelPath = "../model/fc.onnx";  // 模型文件路径
 
     detector.readVideo(videoPath);  // 读取视频
 
@@ -84,7 +84,7 @@ int main()
         if(detector.list == 0){VisionData.aimPitch=0;VisionData.aimYaw=0;}
         if(visionPort.isOk)
         {
-            detector.serData=cv::format("Y:%05.2f/P:%05.2f",pnpSolve.yaw,pnpSolve.pitch_off);
+            detector.serData=cv::format("Y:%05.2f/P:%05.2f",VisionData.aimYaw = pnpSolve.yaw,VisionData.aimPitch= pnpSolve.pitch_off);
             detector.readData=cv::format("SY:%05.2f/SP:%05.2f",RobotData.robotYaw,RobotData.robotPitch);
         }
         else{
