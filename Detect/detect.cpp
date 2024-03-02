@@ -71,18 +71,19 @@ void detect::findLightBar() {
         if(bar[i].angle > 45){
             continue;
         }
-//        if(bar[i].size.height/bar[i].size.width<1.5 || bar[i].size.height/bar[i].size.width>8){
-//            continue;
-//        }
-        if(bar[i].size.width/bar[i].size.height > 8|| bar[i].size.width/bar[i].size.height <0.8){
+        if(bar[i].size.height/bar[i].size.width<1.5 || bar[i].size.height/bar[i].size.width>8){
             continue;
         }
+//        if(bar[i].size.width/bar[i].size.height > 8|| bar[i].size.width/bar[i].size.height <0.8){
+//            continue;
+//        }
         if(bar[i].size.width*bar[i].size.height <100){
             continue;
         }
         else{
             light.push_back(bar[i]);
         }
+        cout<<"color"+enemyColor<<endl;
         line(pre,P[0],P[1],Scalar(255,0,0),2);
         line(pre,P[1],P[2],Scalar(255,0,0),2);
         line(pre,P[2],P[3],Scalar(255,0,0),2);
@@ -155,21 +156,21 @@ void detect::numClassify(const std::string &model_path) {
 
             if (Bar.center.x<light[i].center.x) {
                 left_bottom.x = (rect1[0].x + rect1[1].x)/2;
-                left_bottom.y = rect1[0].y + abs(rect1[2].y - rect1[0].y)/3 ;
+                left_bottom.y = rect1[0].y + abs(rect1[2].y - rect1[0].y)/4 ;
                 left_top.x = (rect1[2].x + rect1[3].x)/2;
                 left_top.y = rect1[2].y - abs(rect1[2].y - rect1[0].y)/2;
                 right_bottom.x = (rect2[0].x +rect2[1].x)/2;
-                right_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/3;
+                right_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/4;
                 right_top.x = (rect2[2].x +rect2[3].x)/2;
                 right_top.y = rect2[2].y - abs(rect2[2].y - rect2[0].y)/2;
             }
             else{
                 left_bottom.x = (rect2[0].x + rect2[1].x)/2;
-                left_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/3;
+                left_bottom.y = rect2[0].y + abs(rect2[2].y - rect2[0].y)/4;
                 left_top.x = (rect2[2].x + rect2[3].x)/2;
                 left_top.y = rect2[2].y - abs(rect2[2].y - rect2[0].y)/2;
                 right_bottom.x = (rect1[0].x +rect1[1].x)/2;
-                right_bottom.y = rect1[0].y + abs(rect2[2].y - rect1[0].y)/3;
+                right_bottom.y = rect1[0].y + abs(rect2[2].y - rect1[0].y)/4;
                 right_top.x = (rect1[2].x +rect1[3].x)/2;
                 right_top.y = rect1[2].y - abs(rect1[2].y - rect1[0].y)/2;
             }
@@ -204,7 +205,7 @@ void detect::numClassify(const std::string &model_path) {
             num = number_image /255.0;
 
     //-------------------------------------
-           double gama = 0.1;
+           double gama =0.1;
            cv::Mat lookUpTable(1, 256, CV_8U);
            uchar* p = lookUpTable.ptr();
            for (int i = 0; i < 256; i++) {
